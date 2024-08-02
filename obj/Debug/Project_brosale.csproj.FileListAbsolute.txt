@@ -1,0 +1,14 @@
+D:\Study_material\C#_Project\Brosale\Project_brosale\bin\Debug\Project_brosale.exe.config
+D:\Study_material\C#_Project\Brosale\Project_brosale\bin\Debug\Project_brosale.exe
+D:\Study_material\C#_Project\Brosale\Project_brosale\bin\Debug\Project_brosale.pdb
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.csproj.AssemblyReference.cache
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.Brosale.resources
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.Login.resources
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.Properties.Resources.resources
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.csproj.GenerateResource.cache
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.csproj.CoreCompileInputs.cache
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.exe
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.pdb
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.Book.resources
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.User.resources
+D:\Study_material\C#_Project\Brosale\Project_brosale\obj\Debug\Project_brosale.DashBoard.resources
