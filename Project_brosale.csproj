@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.3, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.3\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Management.Sql, Version=0.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,17 +50,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ask.Designer.cs">
+      <DependentUpon>Ask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B1.Designer.cs">
+      <DependentUpon>B1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B10.Designer.cs">
+      <DependentUpon>B10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B11.Designer.cs">
+      <DependentUpon>B11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B2.Designer.cs">
+      <DependentUpon>B2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B3.Designer.cs">
+      <DependentUpon>B3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B4.Designer.cs">
+      <DependentUpon>B4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B5.Designer.cs">
+      <DependentUpon>B5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B6.Designer.cs">
+      <DependentUpon>B6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B7.Designer.cs">
+      <DependentUpon>B7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B8.Designer.cs">
+      <DependentUpon>B8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="B9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B9.Designer.cs">
+      <DependentUpon>B9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Book.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Book.Designer.cs">
       <DependentUpon>Book.cs</DependentUpon>
     </Compile>
-    <Compile Include="Brosale.cs">
+    <Compile Include="Buynow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Brosale.Designer.cs">
-      <DependentUpon>Brosale.cs</DependentUpon>
+    <Compile Include="Buynow.Designer.cs">
+      <DependentUpon>Buynow.cs</DependentUpon>
     </Compile>
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
@@ -64,31 +140,569 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DynamicImageLoader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicImageLoader.Designer.cs">
+      <DependentUpon>DynamicImageLoader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H1.Designer.cs">
+      <DependentUpon>H1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H10.Designer.cs">
+      <DependentUpon>H10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H11.Designer.cs">
+      <DependentUpon>H11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H12.Designer.cs">
+      <DependentUpon>H12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H2.Designer.cs">
+      <DependentUpon>H2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H3.Designer.cs">
+      <DependentUpon>H3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H4.Designer.cs">
+      <DependentUpon>H4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H5.Designer.cs">
+      <DependentUpon>H5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H6.Designer.cs">
+      <DependentUpon>H6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H7.Designer.cs">
+      <DependentUpon>H7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H8.Designer.cs">
+      <DependentUpon>H8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H9.Designer.cs">
+      <DependentUpon>H9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log.Designer.cs">
+      <DependentUpon>log.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="M1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M1.Designer.cs">
+      <DependentUpon>M1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M2.Designer.cs">
+      <DependentUpon>M2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M3.Designer.cs">
+      <DependentUpon>M3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4.Designer.cs">
+      <DependentUpon>M4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M5.Designer.cs">
+      <DependentUpon>M5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M6.Designer.cs">
+      <DependentUpon>M6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M7.Designer.cs">
+      <DependentUpon>M7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M8.Designer.cs">
+      <DependentUpon>M8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M9.Designer.cs">
+      <DependentUpon>M9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="N1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="N1.Designer.cs">
+      <DependentUpon>N1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="N2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="N2.Designer.cs">
+      <DependentUpon>N2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="N3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="N3.Designer.cs">
+      <DependentUpon>N3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="N4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="N4.Designer.cs">
+      <DependentUpon>N4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="N5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="N5.Designer.cs">
+      <DependentUpon>N5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="N6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="N6.Designer.cs">
+      <DependentUpon>N6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P1.Designer.cs">
+      <DependentUpon>P1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P10.Designer.cs">
+      <DependentUpon>P10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P2.Designer.cs">
+      <DependentUpon>P2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P3.Designer.cs">
+      <DependentUpon>P3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P4.Designer.cs">
+      <DependentUpon>P4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P5.Designer.cs">
+      <DependentUpon>P5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P6.Designer.cs">
+      <DependentUpon>P6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P7.Designer.cs">
+      <DependentUpon>P7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P8.Designer.cs">
+      <DependentUpon>P8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P9.Designer.cs">
+      <DependentUpon>P9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pic.Designer.cs">
+      <DependentUpon>pic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R1.Designer.cs">
+      <DependentUpon>R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R10.Designer.cs">
+      <DependentUpon>R10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R11.Designer.cs">
+      <DependentUpon>R11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R2.Designer.cs">
+      <DependentUpon>R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R3.Designer.cs">
+      <DependentUpon>R3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R4.Designer.cs">
+      <DependentUpon>R4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R5.Designer.cs">
+      <DependentUpon>R5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R6.Designer.cs">
+      <DependentUpon>R6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R7.Designer.cs">
+      <DependentUpon>R7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R8.Designer.cs">
+      <DependentUpon>R8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R9.Designer.cs">
+      <DependentUpon>R9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seller.Designer.cs">
+      <DependentUpon>seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign.Designer.cs">
+      <DependentUpon>sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thanku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thanku.Designer.cs">
+      <DependentUpon>Thanku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtfname.cs" />
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Userp1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp1.Designer.cs">
+      <DependentUpon>Userp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp2.Designer.cs">
+      <DependentUpon>Userp2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp3.Designer.cs">
+      <DependentUpon>Userp3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp4.Designer.cs">
+      <DependentUpon>Userp4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp5.Designer.cs">
+      <DependentUpon>Userp5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp6.Designer.cs">
+      <DependentUpon>Userp6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp7.Designer.cs">
+      <DependentUpon>Userp7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp8.Designer.cs">
+      <DependentUpon>Userp8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userp9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userp9.Designer.cs">
+      <DependentUpon>Userp9.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ask.resx">
+      <DependentUpon>Ask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B1.resx">
+      <DependentUpon>B1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B10.resx">
+      <DependentUpon>B10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B11.resx">
+      <DependentUpon>B11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B2.resx">
+      <DependentUpon>B2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B3.resx">
+      <DependentUpon>B3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B4.resx">
+      <DependentUpon>B4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B5.resx">
+      <DependentUpon>B5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B6.resx">
+      <DependentUpon>B6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B7.resx">
+      <DependentUpon>B7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B8.resx">
+      <DependentUpon>B8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B9.resx">
+      <DependentUpon>B9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Book.resx">
       <DependentUpon>Book.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Brosale.resx">
-      <DependentUpon>Brosale.cs</DependentUpon>
+    <EmbeddedResource Include="Buynow.resx">
+      <DependentUpon>Buynow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="H1.resx">
+      <DependentUpon>H1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H10.resx">
+      <DependentUpon>H10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H11.resx">
+      <DependentUpon>H11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H12.resx">
+      <DependentUpon>H12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H2.resx">
+      <DependentUpon>H2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H3.resx">
+      <DependentUpon>H3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H4.resx">
+      <DependentUpon>H4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H5.resx">
+      <DependentUpon>H5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H6.resx">
+      <DependentUpon>H6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H7.resx">
+      <DependentUpon>H7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H8.resx">
+      <DependentUpon>H8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H9.resx">
+      <DependentUpon>H9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.resx">
+      <DependentUpon>log.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M1.resx">
+      <DependentUpon>M1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M2.resx">
+      <DependentUpon>M2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M3.resx">
+      <DependentUpon>M3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4.resx">
+      <DependentUpon>M4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M5.resx">
+      <DependentUpon>M5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M6.resx">
+      <DependentUpon>M6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M7.resx">
+      <DependentUpon>M7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M8.resx">
+      <DependentUpon>M8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M9.resx">
+      <DependentUpon>M9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N1.resx">
+      <DependentUpon>N1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N2.resx">
+      <DependentUpon>N2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N3.resx">
+      <DependentUpon>N3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N4.resx">
+      <DependentUpon>N4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N5.resx">
+      <DependentUpon>N5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="N6.resx">
+      <DependentUpon>N6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P1.resx">
+      <DependentUpon>P1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P10.resx">
+      <DependentUpon>P10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P2.resx">
+      <DependentUpon>P2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P3.resx">
+      <DependentUpon>P3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P4.resx">
+      <DependentUpon>P4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P5.resx">
+      <DependentUpon>P5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P6.resx">
+      <DependentUpon>P6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P7.resx">
+      <DependentUpon>P7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P8.resx">
+      <DependentUpon>P8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P9.resx">
+      <DependentUpon>P9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pic.resx">
+      <DependentUpon>pic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,9 +713,82 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="R1.resx">
+      <DependentUpon>R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R10.resx">
+      <DependentUpon>R10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R11.resx">
+      <DependentUpon>R11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R2.resx">
+      <DependentUpon>R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R3.resx">
+      <DependentUpon>R3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R4.resx">
+      <DependentUpon>R4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R5.resx">
+      <DependentUpon>R5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R6.resx">
+      <DependentUpon>R6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R7.resx">
+      <DependentUpon>R7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R8.resx">
+      <DependentUpon>R8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R9.resx">
+      <DependentUpon>R9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seller.resx">
+      <DependentUpon>seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thanku.resx">
+      <DependentUpon>Thanku.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Userp1.resx">
+      <DependentUpon>Userp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp2.resx">
+      <DependentUpon>Userp2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp3.resx">
+      <DependentUpon>Userp3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp4.resx">
+      <DependentUpon>Userp4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp5.resx">
+      <DependentUpon>Userp5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp6.resx">
+      <DependentUpon>Userp6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp7.resx">
+      <DependentUpon>Userp7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp8.resx">
+      <DependentUpon>Userp8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userp9.resx">
+      <DependentUpon>Userp9.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

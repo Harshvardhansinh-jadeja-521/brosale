@@ -88,5 +88,46 @@ namespace Project_brosale
 
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            Ask a = new Ask();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Signup s = new Signup();
+            s.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Ask a = new Ask();
+            a.Show();
+            this.Hide();
+        }
+
+        private void Login_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
